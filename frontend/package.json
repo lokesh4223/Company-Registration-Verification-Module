@@ -11,7 +11,7 @@
     "test": "jest",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d build",
     "deploy:custom": "node deploy.js"
   },
   "dependencies": {

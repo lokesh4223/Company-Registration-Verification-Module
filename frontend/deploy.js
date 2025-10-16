@@ -1,6 +1,6 @@
 const ghpages = require('gh-pages');
 
-ghpages.publish('dist', {
+ghpages.publish('build', {
   branch: 'gh-pages',
   repo: 'https://github.com/lokesh4223/Company-Registration-Verification-Module.git',
   user: {
