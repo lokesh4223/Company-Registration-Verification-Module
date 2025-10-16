@@ -1,0 +1,17 @@
+# Development Dependencies
+
+# Testing
+pytest==7.2.0
+pytest-django==4.5.2
+pytest-cov==4.0.0
+factory-boy==3.2.1
+mock==4.0.3
+
+# Code Quality
+black==22.10.0
+flake8==5.0.4
+bandit==1.7.4
+
+# Development Tools
+django-extensions==3.2.1
+ipython==8.6.0
