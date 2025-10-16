@@ -1,5 +1,6 @@
 {
   "name": "company-registration-frontend",
+  "homepage": "https://lokesh4223.github.io/Company-Registration-Verification-Module",
   "version": "1.0.0",
   "description": "Frontend for the Company Registration System",
   "main": "index.js",
@@ -8,7 +9,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "jest",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "deploy:custom": "node deploy.js"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -21,6 +25,7 @@
     "cloudinary": "^1.40.0",
     "firebase": "^10.1.0",
     "flowbite-react": "^0.12.9",
+    "gh-pages": "^6.3.0",
     "react": "^18.2.0",
     "react-datepicker": "^4.16.0",
     "react-dom": "^18.2.0",

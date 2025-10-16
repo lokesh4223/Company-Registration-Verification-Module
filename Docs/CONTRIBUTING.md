@@ -1,104 +1,113 @@
 # Contributing to Company Registration System
 
-## Overview
-Thank you for your interest in contributing to the Company Registration system! This document provides guidelines and procedures for contributing to the project.
+Thank you for your interest in contributing to the Company Registration System! We welcome contributions from the community and are excited to work with you.
 
 ## Code of Conduct
-All contributors are expected to follow our Code of Conduct which promotes a respectful and inclusive environment for everyone.
 
-## How to Contribute
+This project and everyone participating in it is governed by our Code of Conduct. By participating, you are expected to uphold this code. Please report unacceptable behavior to the project team.
+
+## How Can I Contribute?
 
 ### Reporting Bugs
-1. Check if the issue already exists in the issue tracker
-2. Create a new issue with:
-   - Clear, descriptive title
-   - Detailed steps to reproduce the problem
-   - Expected vs. actual behavior
-   - Screenshots or code examples if applicable
-   - Environment information (OS, browser, etc.)
+
+Before creating bug reports, please check the existing issues as you might find out that you don't need to create one. When you are creating a bug report, please include as many details as possible:
+
+- **Use a clear and descriptive title** for the issue to identify the problem.
+- **Describe the exact steps which reproduce the problem** in as many details as possible.
+- **Provide specific examples to demonstrate the steps**.
+- **Describe the behavior you observed after following the steps** and point out what exactly is the problem with that behavior.
+- **Explain which behavior you expected to see instead and why.**
+- **Include screenshots and animated GIFs** which show you following the described steps and clearly demonstrate the problem.
 
 ### Suggesting Enhancements
-1. Check the existing feature requests
-2. Create a new issue with:
-   - Clear description of the enhancement
-   - Use case and benefits
-   - Potential implementation approach (optional)
 
-### Code Contributions
+Enhancement suggestions are tracked as GitHub issues. When creating an enhancement suggestion, please include:
 
-#### Development Workflow
+- **Use a clear and descriptive title** for the issue to identify the suggestion.
+- **Provide a step-by-step description of the suggested enhancement** in as many details as possible.
+- **Provide specific examples to demonstrate the steps**.
+- **Describe the current behavior and explain which behavior you expected to see instead** and why.
+- **Explain why this enhancement would be useful** to most users.
+
+### Pull Requests
+
+The process described here has several goals:
+
+- Maintain the project's quality
+- Fix problems that are important to users
+- Engage the community in working toward the best possible product
+- Enable a sustainable system for the project's maintainers to review contributions
+
+Please follow these steps to have your contribution considered by the maintainers:
+
+1. Follow all instructions in [the template](PULL_REQUEST_TEMPLATE.md)
+2. Follow the [styleguides](#styleguides)
+3. After you submit your pull request, verify that all status checks are passing
+
+While the prerequisites above must be satisfied prior to having your pull request reviewed, the reviewer(s) may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
+
+## Styleguides
+
+### Git Commit Messages
+
+- Use the present tense ("Add feature" not "Added feature")
+- Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
+- Limit the first line to 72 characters or less
+- Reference issues and pull requests liberally after the first line
+- When only changing documentation, include `[ci skip]` in the commit title
+
+### JavaScript Styleguide
+
+All JavaScript code must adhere to [JavaScript Standard Style](https://standardjs.com/).
+
+- Prefer the object spread operator (`{...anotherObj}`) to `Object.assign()`
+- Inline `export`s with expressions whenever possible
+- Use `const` for all of your references; avoid using `var`
+- If you must reassign references, use `let` instead of `var`
+
+### CSS Styleguide
+
+- Use classes instead of IDs for styling
+- Use meaningful class names
+- Prefix JavaScript-specific classes with `js-`
+- Use kebab-case for class names
+- Use shorthand properties where possible
+
+### Documentation Styleguide
+
+- Use [Markdown](https://daringfireball.net/projects/markdown) for documentation
+- Reference methods and classes in documentation using backticks (`` `method()` ``)
+- Reference issues and pull requests using hashtags (`` #123 ``)
+
+## Development Setup
+
 1. Fork the repository
-2. Create a feature branch from `main`
-3. Make your changes
-4. Write or update tests as needed
-5. Ensure all tests pass
-6. Commit your changes using conventional commit messages
-7. Push to your fork
-8. Create a pull request
+2. Clone your fork
+3. Create a new branch for your feature or bug fix
+4. Make your changes
+5. Write tests for your changes
+6. Ensure all tests pass
+7. Commit your changes
+8. Push to your fork
+9. Create a pull request
 
-#### Pull Request Process
-1. Ensure your PR has a clear title and description
-2. Link to any related issues
-3. Follow the coding standards outlined in [CODING_STANDARDS.md](CODING_STANDARDS.md)
-4. Include tests for new functionality
-5. Update documentation as needed
-6. Request review from maintainers
+## Additional Notes
 
-### Code Review Process
-All submissions require review by maintainers. Reviewers will check:
-- Code quality and adherence to standards
-- Test coverage and quality
-- Documentation updates
-- Security considerations
-- Performance implications
+### Issue and Pull Request Labels
 
-## Development Standards
+This section lists the labels we use to help us track and manage issues and pull requests.
 
-### Branch Naming
-- `feature/short-description` for new features
-- `bugfix/short-description` for bug fixes
-- `hotfix/short-description` for urgent fixes
-- `release/version-number` for releases
+#### Type of Issue and Issue State
 
-### Commit Messages
-Follow conventional commit format:
-```
-type(scope): description
+- `bug` - Issues that are bugs
+- `enhancement` - Issues that are feature requests
+- `documentation` - Issues that are documentation related
+- `question` - Issues that are questions
+- `help wanted` - Issues that need assistance
+- `good first issue` - Good for newcomers
 
-body (optional)
+#### Pull Request Labels
 
-footer (optional)
-```
-
-Types include: feat, fix, chore, docs, style, refactor, perf, test
-
-### Testing Requirements
-- All new code must include unit tests
-- Integration tests for API changes
-- UI tests for frontend changes
-- Maintain test coverage above 80%
-
-## Getting Started
-
-### Setting Up Development Environment
-Follow the instructions in [SETUP_GUIDE.md](SETUP_GUIDE.md) to set up your development environment.
-
-### Finding Issues to Work On
-- Look for issues labeled `good first issue` for beginners
-- Issues labeled `help wanted` are ready for community contribution
-- Check the project roadmap in [ROADMAP.md](ROADMAP.md)
-
-## Communication
-- Join our developer community on Slack
-- Participate in weekly development meetings
-- Ask questions in the #development channel
-- Announce significant contributions in #announcements
-
-## Recognition
-Contributors will be recognized in:
-- Release notes
-- Contributor list
-- Annual community appreciation event
-
-## Legal Considerations
-By contributing, you agree that your contributions will be licensed under the project's license and that you have the right to contribute the code.
+- `work in progress` - Pull requests that are not yet ready for review
+- `needs review` - Pull requests that need review
+- `needs testing` - Pull requests that need testing
