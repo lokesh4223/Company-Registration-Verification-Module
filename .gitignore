@@ -167,5 +167,5 @@ Thumbs.db
 tmp/
 temp/
 
-# Documentation
-.Docs/PROJECT_COMPLETE_DETAILS.pdf
+# Documentation PDF (if generated)
+Docs/PROJECT_COMPLETE_DETAILS.pdf
