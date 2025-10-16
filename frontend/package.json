@@ -1,9 +1,9 @@
 {
   "name": "company-registration-frontend",
-  "homepage": "https://lokesh4223.github.io/Company-Registration-Verification-Module",
+  "private": true,
   "version": "1.0.0",
+  "type": "module",
   "description": "Frontend for the Company Registration System",
-  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
