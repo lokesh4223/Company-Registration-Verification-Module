@@ -24,6 +24,8 @@ import Settings from './components/dashboard/Settings';
 // Route Protection
 import ProtectedRoute from './components/ProtectedRoute';
 import PublicRoute from './components/PublicRoute';
+// 404 Component
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -66,6 +68,9 @@ function App() {
               <CombinedDashboard />
             </ProtectedRoute>
           } />
+          
+          {/* 404 Route - Catch all unmatched routes */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <ToastContainer 
           position="top-right"
